@@ -144,3 +144,7 @@ Open the browser and hit the first app: [http://myapp.com/ui](http://myapp.com/u
 Now the second app: [http://myapp.com/ui2](http://myapp.com/ui2)
 
 ![myapp2](imgs/myapp2.png)
+
+# Clean Up
+
+Run `minikube delete` to shutdown the cluster.
