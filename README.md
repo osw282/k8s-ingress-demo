@@ -1,10 +1,16 @@
-# Ingress In Kubernetes
+<h1 align="center">
+    Ingress on Kubernetes
+</h1>
 
 This repo aims to give you the basic understanding on how to configure an ingress controller on a k8s cluster.
 
 We won't go into the detail about what ingress controller is for and the different types of controllers - we'll be using nginx as our controller for this demo.
 
 We will use minikube to create our demo cluster.
+
+The diagram below shows what we’ll be setting up.
+
+![flow](imgs/flow.png)
 
 ## Prerequisites
 - [minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download)
