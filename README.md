@@ -4,6 +4,8 @@ This repo aims to give you the basic understanding on how to configure an ingres
 
 We won't go into the detail about what ingress controller is for and the different types of controllers - we'll be using nginx as our controller for this demo.
 
+We will use minikube to create our demo cluster.
+
 ## Prerequisites
 - [minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fmacos%2Farm64%2Fstable%2Fbinary+download)
 - [docker](https://www.docker.com/)
