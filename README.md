@@ -56,7 +56,7 @@ You should see internal services for both `myapp` and `myapp2` deployments.
 
 Now let's configure an ingress rule for our `myapp` and `myapp2` so we can access them from a browser using a domain name.
 
-Take a look inside our [manifest/ingress/myapp-ingress.yaml](manifest/ingress/myapp-ingress.yaml) folder - we have an ingress rule yaml already defined there with comments explaining what each line does.
+Take a look inside our [manifest/ingress/myapp-ingress.yaml](manifest/ingress/myapp-ingress.yaml) - we have an ingress rule yaml already defined there with comments explaining what each line does.
 
 Apply the ingress configuration:
 ```bash
