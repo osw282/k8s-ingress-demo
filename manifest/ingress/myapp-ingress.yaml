@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+  namespace: default # same as the namespace of the myapp deployment and service
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: myapp.com # this is the domain name we are forwarding to, we will have to add this to our hosts file because it's not a real domain name.
+    http: # http to forward to the myapp service, this is the protocol we are using internally. Not the browser protocol.
+      paths:
+      - path: /ui
+        pathType: Prefix # https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types
+        backend:
+          service:
+            name: myapp-service # this is the name of the service we are forwarding to.
+            port:
+              number: 8080 # this is the port of the myapp service, this is the port we are forwarding to.
+      - path: /ui2
+        pathType: Prefix # https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types
+        backend:
+          service:
+            name: myapp2-service # this is the name of the service we are forwarding to.
+            port:
+              number: 8080 # this is the port of the myapp2 service, this is the port we are forwarding to.
